@@ -2,15 +2,16 @@ import React from "react";
 import { SimpleTab } from "components/SimpleTab";
 import { TabData } from "./constants";
 import styles from "./index.scss";
+import { ProductInfo } from "../constants";
 
 const LeftContainer: React.FC = () => {
     const buildTabData = () => (
         <div
             // className={}
-            key={TabData[0].label}
+            key={"details"}
         >
             <div className={styles["leftContainer__detail"]}>
-                <p>{TabData[0].detail}</p>
+                <p>{ProductInfo.details}</p>
             </div>
         </div>
     );

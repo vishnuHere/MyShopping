@@ -1,0 +1,15 @@
+.rightContainer {
+    display: flex;
+    flex-direction: column;
+    margin: 5px;
+
+    &__desc {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+
+        img {
+            max-height: 80px;
+        }
+    }
+}

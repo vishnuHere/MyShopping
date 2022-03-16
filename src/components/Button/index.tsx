@@ -41,7 +41,8 @@ export const Button = (props: propType) => {
             disabled={disabled}
             title={title}
         >
-            {icon ? icon : label}
+            {label}
+            {icon && icon}
         </button>
     );
 };

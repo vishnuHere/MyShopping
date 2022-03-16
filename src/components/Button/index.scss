@@ -1,4 +1,4 @@
-$button-primary: #0d315c;
+$button-primary: #000;
 
 .button {
     padding: 0.625rem 1rem;
@@ -11,6 +11,7 @@ $button-primary: #0d315c;
     font-size: 0.93rem;
     cursor: pointer;
     transition: 0.3s;
+    border-radius: 50px;
 
     &:hover {
         background: darken($button-primary, 5%);
