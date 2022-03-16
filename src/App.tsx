@@ -1,9 +1,14 @@
+import NavBar from "components/NavBar";
 import React from "react";
 
 const App: React.FC = () => {
     document.title = "MyShopping";
 
-    return <>Boiler plate setup completed</>;
+    return (
+        <div>
+            <NavBar />
+        </div>
+    );
 };
 
 export default App;
