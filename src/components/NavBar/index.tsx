@@ -5,11 +5,9 @@ import { HEADER_LINKS } from "./constants";
 import { AiOutlineShoppingCart } from "react-icons/ai";
 import styles from "./index.scss";
 
-type PropType = {
-    toggleSideMenuModal: (value: boolean) => void;
-};
+type PropType = {};
 
-const NavBar: React.FC<PropType> = ({ toggleSideMenuModal }) => {
+const NavBar: React.FC<PropType> = () => {
     const buildHeaders = () =>
         HEADER_LINKS.map((header, index) => (
             <div className={styles["navbar__nav-links"]}>{header}</div>
