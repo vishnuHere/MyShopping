@@ -1,7 +1,10 @@
 .rightContainer {
     display: flex;
     flex-direction: column;
-    margin: 5px;
+    margin: 0 3%;
+    width: 18%;
+    position: fixed;
+    right: 0;
 
     &__desc {
         display: flex;

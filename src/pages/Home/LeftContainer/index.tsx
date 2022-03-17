@@ -10,7 +10,7 @@ const LeftContainer: React.FC = () => {
             // className={}
             key={"details"}
         >
-            <div className={styles["leftContainer__detail"]}>
+            <div className={styles["leftContainer__details"]}>
                 <p>{ProductInfo.details}</p>
             </div>
         </div>
