@@ -6,6 +6,11 @@
     position: fixed;
     right: 0;
 
+    @media screen and (max-width: 980px) {
+        position: relative;
+        width: 80%;
+    }
+
     &__desc {
         display: flex;
         align-items: center;

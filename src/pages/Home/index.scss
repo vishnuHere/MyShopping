@@ -2,6 +2,11 @@
     margin-top: 10vh;
     display: flex;
     justify-content: space-between;
-
     background-color: white;
+
+    @media screen and (max-width: 980px) {
+        position: relative;
+        flex-direction: column;
+        align-items: center;
+    }
 }

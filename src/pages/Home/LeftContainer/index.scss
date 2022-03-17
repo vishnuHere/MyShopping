@@ -5,6 +5,11 @@
     width: min-content;
     position: fixed;
 
+    @media screen and (max-width: 980px) {
+        position: relative;
+        width: fit-content;
+    }
+
     &__details{
         padding: 0 5%;
     }

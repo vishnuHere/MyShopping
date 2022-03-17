@@ -6,8 +6,6 @@
     padding: 0 20vw;
     text-align: center;
     color: #000;
-    // position: absolute;
-    // bottom: 0;
 
     > label:nth-child(1) {
         font-weight: bold;
@@ -16,6 +14,10 @@
     > label:nth-child(2) {
         font-weight: 200;
         font-size: xx-large;
+
+        @media screen and (max-width: 980px) {
+            font-size: large;
+        }
     }
 
     > label{
