@@ -11,6 +11,14 @@
         width: 80%;
     }
 
+    h1, h4, p {
+        margin: 5px 0;
+    }
+
+    > label {
+        margin: 5px 0;
+    }
+
     &__desc {
         display: flex;
         align-items: center;

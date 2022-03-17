@@ -1,7 +1,7 @@
 .navbar {
     background-color: #fff;
     color: #000;
-    height: 70px;
+    height: 10vh;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -13,14 +13,10 @@
     z-index: 100;
     padding: 0 3vw;
 
-    @media screen and (max-width: 768px) {
-        gap: 1rem;
-    }
-
     @media screen and (max-width: 980px) {
         right: 0px;
+        font-size: 0.8rem;
     }
-
 
     &__logo {
         display: flex;
@@ -32,9 +28,14 @@
         border-radius: 10px;
 
         > img {
-            object-fit: contain;
             max-width: 100%;
             height: 30px;
+        }
+
+        @media screen and (max-width: 980px) {
+            > img {
+                height: 20px;
+            }
         }
     }
 

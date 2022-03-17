@@ -14,8 +14,8 @@ export const updateColor = (color: string) => {
     };
 };
 
-export const toggleFavourite = () => {
-    return { type: CART_ACTIONS.UPDATE_FAVOURITE };
+export const toggleFavourite = (flag: boolean) => {
+    return { type: CART_ACTIONS.UPDATE_FAVOURITE, flag };
 };
 
 export const updateSizeSuccess = (size: string) => {
@@ -32,6 +32,6 @@ export const updateColorSuccess = (color: string) => {
     };
 };
 
-export const updateFavouriteSuccess = () => {
-    return { type: CART_ACTIONS.UPDATE_FAVOURITE_SUCCESS };
+export const updateFavouriteSuccess = (result: boolean) => {
+    return { type: CART_ACTIONS.UPDATE_FAVOURITE_SUCCESS, result };
 };

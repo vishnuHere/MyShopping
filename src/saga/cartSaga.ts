@@ -18,8 +18,8 @@ export function* updateColorSaga(action: { type: string; color: string }) {
     } catch (error) {}
 }
 
-export function* updateFavouriteSaga(action: { type: string }) {
+export function* updateFavouriteSaga(action: { type: string; flag: boolean }) {
     try {
-        yield put(updateFavouriteSuccess());
+        yield put(updateFavouriteSuccess(action.flag));
     } catch (error) {}
 }
