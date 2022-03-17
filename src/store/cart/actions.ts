@@ -1,15 +1,5 @@
 import { CART_ACTIONS } from "./constants";
 
-export type AreaParams = {
-    unitId: string;
-    floorId?: string;
-    buildingId?: string;
-    page?: number;
-    perPage?: number;
-    ignorePaging?: boolean;
-    sort?: number;
-};
-
 export const updateSize = (size: string) => {
     return {
         type: CART_ACTIONS.UPDATE_SIZE,
@@ -35,10 +25,10 @@ export const updateSizeSuccess = (size: string) => {
     };
 };
 
-export const updateColorSuccess = (size: string) => {
+export const updateColorSuccess = (color: string) => {
     return {
         type: CART_ACTIONS.UPDATE_COLOR_SUCCESS,
-        size
+        color
     };
 };
 

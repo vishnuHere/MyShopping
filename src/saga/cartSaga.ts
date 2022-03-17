@@ -8,13 +8,13 @@ import {
 
 export function* updateSizeSaga(action: { type: string; size: string }) {
     try {
-        yield put(updateSizeSuccess(size));
+        yield put(updateSizeSuccess(action.size));
     } catch (error) {}
 }
 
 export function* updateColorSaga(action: { type: string; color: string }) {
     try {
-        yield put(updateColorSuccess(color));
+        yield put(updateColorSuccess(action.color));
     } catch (error) {}
 }
 

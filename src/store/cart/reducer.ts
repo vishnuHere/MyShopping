@@ -9,7 +9,7 @@ export type CartStoreType = {
 
 const initialState = {
     size: "L",
-    color: "black",
+    color: "BLACK",
     favourite: false
 };
 
@@ -34,5 +34,7 @@ export default (
                 ...state,
                 favourite: !favourite
             };
+        default:
+            return state;
     }
 };

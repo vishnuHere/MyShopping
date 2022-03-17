@@ -10,8 +10,8 @@ import green4 from "../../../../assets/green4.jpeg";
 import green5 from "../../../../assets/green5.jpeg";
 
 export const ImageMap = {
-    black: [black1, black2, black3, black4, black5],
-    green: [green1, green2, green3, green4, green5]
+    BLACK: [black1, black2, black3, black4, black5],
+    GREEN: [green1, green2, green3, green4, green5]
 };
 export const TabData = [
     {
