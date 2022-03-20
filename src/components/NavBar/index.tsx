@@ -10,7 +10,9 @@ type PropType = {};
 const NavBar: React.FC<PropType> = () => {
     const buildHeaders = () =>
         HEADER_LINKS.map((header, index) => (
-            <div className={styles["navbar__nav-links"]}>{header}</div>
+            <div key={index} className={styles["navbar__nav-links"]}>
+                {header}
+            </div>
         ));
     const headersSet = useMemo(buildHeaders, HEADER_LINKS);
 

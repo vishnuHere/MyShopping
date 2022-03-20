@@ -7,7 +7,8 @@
 
     > svg {
         position: fixed;
-        left: 68%;
+        left: 65%;
+        z-index: 100;
 
         @media screen and (max-width: 980px) {
             position: absolute;
@@ -25,12 +26,7 @@
     &__image_container {
         display: flex;
         flex-direction: column;
-        transition: 0.3s;
-
-        > img {
-            width: 40vw;
-            height: auto;
-        }
+        transition: 0.5s;
 
         @media screen and (max-width: 980px) {
             display: none;

@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import { Maybe } from "types";
 
 const prefix = "qb-wp-";
@@ -21,4 +22,23 @@ export function getWindowDimensions() {
 
 export const getItemFromLocalStorage = (id: string) => {
     return JSON.parse(localStorage.getItem(id));
+};
+
+export const useIntersectionObserver = ({
+    target,
+    onIntersect,
+    threshold = 0.1,
+    rootMargin = "0px"
+}) => {
+    useEffect(() => {
+        const observer = new IntersectionObserver(onIntersect, {
+            rootMargin,
+            threshold
+        });
+        const current = target.current;
+        observer.observe(current);
+        return () => {
+            observer.unobserve(current);
+        };
+    });
 };

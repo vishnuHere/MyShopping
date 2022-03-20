@@ -4,12 +4,9 @@ import { TabData } from "./constants";
 import styles from "./index.scss";
 import { ProductInfo } from "../constants";
 
-const LeftContainer: React.FC = () => {
+const DetailsContainer: React.FC = () => {
     const buildTabData = () => (
-        <div
-            // className={}
-            key={"details"}
-        >
+        <div key={"details"}>
             <div className={styles["leftContainer__details"]}>
                 <p>{ProductInfo.details}</p>
             </div>
@@ -25,4 +22,4 @@ const LeftContainer: React.FC = () => {
     );
 };
 
-export default LeftContainer;
+export default DetailsContainer;

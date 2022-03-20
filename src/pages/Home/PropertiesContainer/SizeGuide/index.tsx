@@ -3,6 +3,7 @@ import { useDispatch } from "react-redux";
 import { updateSize } from "store/cart/actions";
 import { SIZES } from "./constants";
 import styles from "./index.scss";
+import wordings from "./wordings";
 
 const SizeGuide: React.FC = (props) => {
     const dispatch = useDispatch();
@@ -26,10 +27,10 @@ const SizeGuide: React.FC = (props) => {
         <div className={styles.sizeGuide}>
             <div className={styles.sizeGuide__header}>
                 <div className={styles.sizeGuide__desc}>
-                    <h4>SIZE</h4>
+                    <h4>{wordings.size}</h4>
                     <label>{size}</label>
                 </div>
-                <label>SIZE GUIDE</label>
+                <label>{wordings.sizeGuide}</label>
             </div>
             <div className={styles.sizeGuide__size_options}>
                 {buildSizeOptions()}

@@ -9,8 +9,7 @@ const MyCarousel = (props: PropType) => (
     <Carousel autoPlay>
         {props.images.map((image, index) => (
             <div>
-                <img alt="" src={image} />
-                {/* <p className="legend">Legend 1</p> */}
+                <img key={index} alt="" src={image} />
             </div>
         ))}
     </Carousel>

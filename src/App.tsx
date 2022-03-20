@@ -7,11 +7,11 @@ const App: React.FC = () => {
     document.title = "MyShopping";
 
     return (
-        <div>
+        <>
             <NavBar />
             <Home />
             <Footer />
-        </div>
+        </>
     );
 };
 

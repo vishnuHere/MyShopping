@@ -4,6 +4,17 @@
     padding: 2%;
     width: min-content;
     position: fixed;
+    opacity: 0;
+    -webkit-animation: fadeinout 0.5s linear forwards;
+    animation: fadeinout 0.5s linear forwards;
+
+       @-webkit-keyframes fadeinout {
+           100% { opacity: 1;}
+       }
+
+       @keyframes fadeinout {
+           100% { opacity: 1;}
+       }
 
     @media screen and (max-width: 980px) {
         position: relative;

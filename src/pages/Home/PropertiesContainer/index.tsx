@@ -13,16 +13,15 @@ export type PropType = {
     size: string;
 };
 
-const RightContainer: React.FC = (props: PropType) => {
+const PropertiesContainer: React.FC = (props: PropType) => {
     const { name, description, price } = ProductInfo;
     const { color, size } = props;
     const dispatch = useDispatch();
+    const colorIndex = { GREEN: 0, BLACK: 1 };
 
     const handleImageSelection = (index: number) => {
         dispatch(updateColor(index ? "BLACK" : "GREEN"));
     };
-
-    const colorIndex = { GREEN: 0, BLACK: 1 };
 
     return (
         <div className={styles.rightContainer}>
@@ -44,7 +43,7 @@ const RightContainer: React.FC = (props: PropType) => {
                 ))}
             </div>
             <div className={styles["rightContainer__desc"]}>
-                <h4>COLOR</h4>
+                <h4>{wordings.color}</h4>
                 <label>{color}</label>
             </div>
             <SizeGuide size={size} />
@@ -55,4 +54,4 @@ const RightContainer: React.FC = (props: PropType) => {
     );
 };
 
-export default RightContainer;
+export default PropertiesContainer;
