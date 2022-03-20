@@ -1,0 +1,40 @@
+$tab-hover-color: #dddddd;
+
+.newTab {
+    display: flex;
+    width: 100%;
+    background-color: #fff;
+    overflow: hidden;
+
+    &__tabSection {
+        box-sizing: border-box;
+        color: #000;
+        cursor: pointer;
+        padding: 0.5rem 1rem;
+        transition: 0.2s ease-in-out;
+        font-weight: 550;
+        width: 100%;
+        text-align: center;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+
+        &:hover {
+            background-color: #f1f1f1;
+        }
+    }
+
+    &__active {
+        cursor: default;
+        color: #000;
+        text-align: center;
+
+        &:hover {
+            background-color: white;
+        }
+    }
+
+    &__disabled {
+        cursor: no-drop;
+        color: #8d8d8d;
+    }
+}

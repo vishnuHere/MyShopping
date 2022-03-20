@@ -1,0 +1,25 @@
+import { put } from "redux-saga/effects";
+
+import {
+    updateColorSuccess,
+    updateFavouriteSuccess,
+    updateSizeSuccess
+} from "store/cart/actions";
+
+export function* updateSizeSaga(action: { type: string; size: string }) {
+    try {
+        yield put(updateSizeSuccess(action.size));
+    } catch (error) {}
+}
+
+export function* updateColorSaga(action: { type: string; color: string }) {
+    try {
+        yield put(updateColorSuccess(action.color));
+    } catch (error) {}
+}
+
+export function* updateFavouriteSaga(action: { type: string; flag: boolean }) {
+    try {
+        yield put(updateFavouriteSuccess(action.flag));
+    } catch (error) {}
+}

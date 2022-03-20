@@ -1,0 +1,47 @@
+.sizeGuide {
+    display: flex;
+    flex-direction: column;
+    margin: 5px;
+
+    &__header{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        > label {
+            text-decoration: underline;
+        }
+    }
+
+    &__desc {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    &__size_options{
+        display: grid;
+        grid-template-columns: repeat(4, auto);
+        grid-gap: 1rem;
+        transition: 0.3s;
+
+        > div {
+            border: 2px solid #ccc;
+            text-align: center;
+            padding: 0.1rem;
+            border-radius: 20px;
+            transition: 0.3s;
+            cursor: pointer;
+
+            &:disabled{
+                color: #ccc;
+                pointer-events: none;
+            }
+        }
+
+        &--active{
+            background-color: black;
+            color: white;
+        }
+    }
+}

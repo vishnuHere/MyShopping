@@ -1,0 +1,24 @@
+.image-container {
+    background-color: #ccc;
+    overflow: hidden;
+    position: relative;
+    width: 40vw;
+    height: 80vh;
+  }
+  .image {
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+
+    -webkit-animation: fadeinout 1s linear forwards;
+    animation: fadeinout 1s linear forwards;
+
+       @-webkit-keyframes fadeinout {
+           100% { opacity: 1;}
+       }
+
+       @keyframes fadeinout {
+           100% { opacity: 1;}
+       }
+  }
+ 

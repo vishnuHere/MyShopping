@@ -1,0 +1,73 @@
+.navbar {
+    background-color: #fff;
+    color: #000;
+    height: 10vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+    font-size: 1.2rem;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+    padding: 0 3vw;
+
+    @media screen and (max-width: 980px) {
+        right: 0px;
+        font-size: 0.8rem;
+    }
+
+    &__logo {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0.5rem;
+        background-color: #000;
+        color: white;;
+        border-radius: 10px;
+
+        > img {
+            max-width: 100%;
+            height: 30px;
+        }
+
+        @media screen and (max-width: 980px) {
+            > img {
+                height: 20px;
+            }
+        }
+    }
+
+    &__nav-menu {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+
+        > div {
+            cursor: pointer;
+            transition: 0.3s;
+
+            &:hover {
+                background-color: black;
+                color: white;
+                border-radius: 10px;
+                padding: 5px;
+            }
+        }
+
+        @media screen and (max-width: 1400px) {
+            display: none;
+        }
+    }
+
+    &__icons-container{
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+
+        >svg{
+            padding: 0 20px;
+        }
+    }
+}

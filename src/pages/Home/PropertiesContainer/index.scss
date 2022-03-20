@@ -1,0 +1,46 @@
+.rightContainer {
+    display: flex;
+    flex-direction: column;
+    margin: 0 3%;
+    width: 18%;
+    position: fixed;
+    right: 0;
+    opacity: 0;
+    -webkit-animation: fadeinout 0.5s linear forwards;
+    animation: fadeinout 0.5s linear forwards;
+
+       @-webkit-keyframes fadeinout {
+           100% { opacity: 1;}
+       }
+
+       @keyframes fadeinout {
+           100% { opacity: 1;}
+       }
+
+    @media screen and (max-width: 980px) {
+        position: relative;
+        width: 80%;
+    }
+
+    h1, h4, p {
+        margin: 5px 0;
+    }
+
+    > label {
+        margin: 5px 0;
+    }
+
+    &__desc {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+
+        img {
+            max-height: 80px;
+        }
+    }
+
+    &__selected_color{
+        border: 2px solid black;
+    }
+}

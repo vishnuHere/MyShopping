@@ -1,0 +1,31 @@
+.leftContainer {
+    display: flex;
+    flex-direction: column;
+    padding: 2%;
+    width: min-content;
+    position: fixed;
+    opacity: 0;
+    -webkit-animation: fadeinout 0.5s linear forwards;
+    animation: fadeinout 0.5s linear forwards;
+
+       @-webkit-keyframes fadeinout {
+           100% { opacity: 1;}
+       }
+
+       @keyframes fadeinout {
+           100% { opacity: 1;}
+       }
+
+    @media screen and (max-width: 980px) {
+        position: relative;
+        width: fit-content;
+    }
+
+    &__details{
+        padding: 0 5%;
+    }
+
+    > label{
+        padding: 0 5%; 
+    }
+}

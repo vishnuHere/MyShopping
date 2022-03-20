@@ -1,0 +1,26 @@
+.footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 20vw;
+    text-align: center;
+    color: #000;
+
+    > label:nth-child(1) {
+        font-weight: bold;
+    }
+
+    > label:nth-child(2) {
+        font-weight: 200;
+        font-size: xx-large;
+
+        @media screen and (max-width: 980px) {
+            font-size: large;
+        }
+    }
+
+    > label{
+        margin: 20px 0;
+    }
+}
